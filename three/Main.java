@@ -11,13 +11,13 @@ public class Main {
          * dan Linked list (bobot 10).
          */
 
-        int[] deret = { 53, 64, 128, 113, 124, 248, 122, 134, 268, 280 };
-
         // array sbg stack
-        ArrayStack arrayStack = new ArrayStack(deret.length);
+        ArrayStack arrayStack = new ArrayStack(30);
 
         // linked list sbg stack
         LinkedListStack linkedListStack = new LinkedListStack();
+
+        int[] deret = { 53, 64, 128, 113, 124, 248, 122, 134, 268, 280 };
 
         for (int i : deret) {
             arrayStack.insert(i);
@@ -121,7 +121,6 @@ class ArrayStack {
 
         System.out.println(" <- Top");
     }
-
 }
 
 class Node {
